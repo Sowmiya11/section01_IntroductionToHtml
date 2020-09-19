@@ -1,0 +1,16 @@
+.done{
+text-decoration:line-through;
+opacity:0.5;
+}
+
+.selected{
+color:red;
+}
+
+#d{
+	cloe:red;
+}
+
+p{
+	color:blue;
+}
