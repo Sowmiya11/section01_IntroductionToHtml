@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+p:nth-child(odd){
+color:red;
+}
+p:nth-child(even){
+color:blue;
+}
+
+p.lineDemo::first-line{
+color:green;
+}
+
+[title~="Link"]{
+border: 5px solid yellow;
+}
+
+[class|="Link"]{
+border: 5px dotted yellow ;
+}
+
+[class ^= "Link"]{
+border: 5px dotted yellow ;
+}
+
+[class $= "Link"]{
+border: 5px dotted red ;
+}
+a[target]{
+background-color:red;
+}
+
+</style>
+</head>
+<body>
+<p class="lineDemoLink">This is not div paragraph</br>Second Line of paragraph</p>
+<div>
+<h1 class="LinkHead">div Container</h1>
+<p>This is my paragraph</p>
+<p class="Link-Para">This is not a immediate child of div</p>
+</div>
+<p>This is First Sibling</p>
+<p>This is Second Sibling </p>
+
+<div>
+<h1>div 2Container</h1>
+</div>
+<p>This is First Sibling of div2 Container</p>
+<p>This is Second Sibling of div2 Container</p>
+
+<h1>Pseudo-classes </h1>
+
+<a class="Link" href="http://google.com" target="_blank" title="First Link"> Go Google </a></br>
+
+</body>
+</html>
